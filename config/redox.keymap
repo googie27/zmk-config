@@ -22,11 +22,11 @@
 // | SHIFT |  Z  |  X  |   C   |  V  |  B  | PG_UP | PG_DOWN | --- | HOME | END   |  N    |  M    |  ,    |  .   | /  | SHFT(RET) |
 // | CRTL  | GUI | ATL | LOWER |    COPY    | SPACE | DEL   | --- | RET  | BSPC |     PASTE     | LEFT  | UP | DOWN |   RIGHT   |
             bindings = <
-   &kp ESC   &kp N1   &kp N2   &kp N3 &kp N4   &kp N5                                        &kp N6    &kp N7 &kp N8    &kp N9   &kp N0   &kp BSPC
+   &kp ESC   &kp N1   &kp N2   &kp N3 &kp N4   &kp N5                                        &kp N6    &kp N7 &kp N8    &kp N9   &kp N0   &mo 2
    &kp TAB   &kp Q    &kp W    &kp E  &kp R    &kp T  &kp LPAR                     &kp RPAR  &kp Y     &kp U  &kp I     &kp O    &kp P    &kp MINUS
    &kp LCTRL &kp A    &kp S    &kp D  &kp F    &kp G  &kp LBKT                     &kp RBKT  &kp H     &kp J  &kp K     &kp L    &kp SEMI &kp SQT
    &kp LSHFT &kp Z    &kp X    &kp C  &kp V    &kp B  &kp PG_UP &kp PG_DN &kp HOME &kp END   &kp N     &kp M  &kp COMMA &kp DOT  &kp FSLH &mt RSHFT RET
-   &kp LCTRL &kp LALT &kp LGUI &mo 3      &kp LGUI    &mo 1     &kp SPACE &kp DEL  &kp SPACE       &mo 2      &kp LEFT  &kp DOWN &kp UP   &kp RIGHT
+   &kp LCTRL &kp LGUI &kp LALT &mo 1      &kp LC(C)    &kp SPACE     &kp DEL &kp RET  &kp BSPC       &kp LC(V)      &kp LEFT  &kp UP &kp DOWN   &kp RIGHT
             >;
 
         };
@@ -39,11 +39,11 @@
 // | SHIFT | ESC | GUI | COPY  | PASTE |     | PG_UP | PG_DOWN | --- | HOME | END |  \  |  1  |   2  |  3   | RET |  RET  |
 // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
             bindings = <
-   &trans  &trans    &trans    &trans    &trans    &trans                                &trans          &trans    &trans    &trans    &trans      &trans
-   &kp ESC &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &trans               &trans &kp N6          &kp N7    &kp N8    &kp N9    &kp N0      &kp DEL
-   &trans  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &trans               &trans &kp KP_MULTIPLY &kp N4    &kp N5    &kp N6    &kp KP_PLUS &kp KP_MINUS
-   &trans  &kp ESC   &kp LGUI  &kp LG(C) &kp LG(V) &kp GRAVE &trans &trans &trans &trans &kp KP_DIVIDE   &kp N1    &kp N2    &kp N3    &kp RET     &kp RET
-   &trans  &trans    &trans    &trans          &trans        &trans &trans &trans &kp N0          &mo 3            &trans    &trans    &trans      &trans
+   &kp GRAVE  &kp F1    &kp F2    &kp F3    &kp F4    &kp F5                                     &kp F6          &kp F7    &kp F8    &kp F9    &kp F10     &kp DEL
+   &kp TILDE  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp LPAR                &kp RPAR  &kp N6          &kp N7    &kp N8    &kp N9    &kp N0      &kp DEL
+   &kp LCTRL  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &kp LBKT                &kp RBKT  &kp KP_MULTIPLY &kp N4    &kp N5    &kp N6    &kp KP_PLUS &kp KP_MINUS
+   &kp LSHFT  &kp ESC   &kp LGUI  &kp LC(C) &kp LC(V) &trans    &kp PG_UP &kp PG_DN      &kp HOME  &kp END &kp BSLH        &kp N1    &kp N2    &kp N3      &kp RET   &kp RET
+   &kp LCTRL  &kp LALT  &kp LGUI  &trans              &kp LGUI  &trans    &kp SPACE                &kp DEL &kp N0                    &mo 2     &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT
             >;
         };
 
